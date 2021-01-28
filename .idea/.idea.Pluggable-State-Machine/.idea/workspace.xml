@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44149be3-e316-4a37-8b3a-f7ebf89c0689" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/TankController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankNpc.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankNpc.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pluggable-State-Machine/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pluggable-State-Machine/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Pluggable-State-Machine/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Pluggable-State-Machine/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/NPCManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/NPCManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/TankController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankChaseAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankChaseAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankGetNearestAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankGetNearestAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankPatrolAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankPatrolAction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankChaseDecision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankChaseDecision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankGetNearestDecision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankGetNearestDecision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolCompleteDecision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolCompleteDecision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/TankMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/TankMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,45 +26,72 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/TankController.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="171">
+                    <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+                    <folding>
+                      <marker date="1611852543082" expanded="true" signature="6:94" ph="..." />
+                      <marker date="1611852543082" expanded="true" signature="112:3350" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="176:3348" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="953:1273" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="1029:1254" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="1335:1512" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="1361:1502" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="1715:1899" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="1959:2009" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="2055:2110" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="2139:2208" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="2235:2973" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="2398:2469" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="2508:2580" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="2619:2689" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="2729:2798" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="2870:2963" ph="{...}" />
+                      <marker date="1611852543082" expanded="true" signature="3010:3333" ph="{...}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/NPCManager.cs">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="440">
+                    <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+                    <folding>
+                      <marker date="1611852557728" expanded="true" signature="6:64" ph="..." />
+                      <marker date="1611852557728" expanded="true" signature="89:894" ph="{...}" />
+                      <marker date="1611852557728" expanded="true" signature="131:892" ph="{...}" />
+                      <marker date="1611852557728" expanded="true" signature="238:646" ph="{...}" />
+                      <marker date="1611852557728" expanded="true" signature="384:636" ph="{...}" />
+                      <marker date="1611852557728" expanded="true" signature="709:759" ph="{...}" />
+                      <marker date="1611852557728" expanded="true" signature="796:886" ph="{...}" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankChaseDecision.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <marker date="1611765930873" expanded="true" signature="6:53" ph="..." />
-                <marker date="1611765930873" expanded="true" signature="97:770" ph="{...}" />
-                <marker date="1611765930873" expanded="true" signature="204:767" ph="{...}" />
-                <marker date="1611765930873" expanded="true" signature="274:761" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankGetNearestDecision.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-              <folding>
-                <marker date="1611765930733" expanded="true" signature="6:53" ph="..." />
-                <marker date="1611765930733" expanded="true" signature="97:779" ph="{...}" />
-                <marker date="1611765930733" expanded="true" signature="214:777" ph="{...}" />
-                <marker date="1611765930733" expanded="true" signature="284:771" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolDecision.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="154">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
               <folding>
-                <marker date="1611766096753" expanded="true" signature="6:53" ph="..." />
+                <marker date="1611766096753" expanded="false" signature="6:53" ph="..." />
                 <marker date="1611766096753" expanded="true" signature="97:622" ph="{...}" />
                 <marker date="1611766096753" expanded="true" signature="206:619" ph="{...}" />
                 <marker date="1611766096753" expanded="true" signature="276:613" ph="{...}" />
@@ -57,114 +100,149 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmAction.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-              <folding>
-                <marker date="1611761975283" expanded="false" signature="6:39" ph="..." />
-                <marker date="1611761975283" expanded="true" signature="64:408" ph="{...}" />
-                <marker date="1611761975283" expanded="true" signature="121:406" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmDecision.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-              <folding>
-                <marker date="1611763407733" expanded="true" signature="43:205" ph="{...}" />
-                <marker date="1611763407733" expanded="true" signature="101:203" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmState.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
-              <folding>
-                <marker date="1611764402273" expanded="false" signature="6:57" ph="..." />
-                <marker date="1611764402273" expanded="true" signature="82:1983" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="176:1981" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="461:627" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="711:802" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="886:1004" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="1096:1216" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="1307:1973" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="1375:1963" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="1510:1620" ph="{...}" />
-                <marker date="1611764402273" expanded="true" signature="1675:1949" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmTransition.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-              <folding>
-                <marker date="1611761975443" expanded="true" signature="49:317" ph="{...}" />
-                <marker date="1611761975443" expanded="true" signature="107:315" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/StateMachine.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
-              <folding>
-                <marker date="1611764009263" expanded="false" signature="6:128" ph="..." />
-                <marker date="1611764009263" expanded="true" signature="153:1920" ph="{...}" />
-                <marker date="1611764009263" expanded="true" signature="236:1918" ph="{...}" />
-                <marker date="1611764009263" expanded="true" signature="566:655" ph="{...}" />
-                <marker date="1611764009263" expanded="true" signature="699:833" ph="{...}" />
-                <marker date="1611764009263" expanded="true" signature="876:967" ph="{...}" />
-                <marker date="1611764009263" expanded="true" signature="1019:1232" ph="{...}" />
-                <marker date="1611764009263" expanded="true" signature="1061:1222" ph="{...}" />
-                <marker date="1611764009263" expanded="true" signature="1306:1710" ph="{...}" />
-                <marker date="1611764009263" expanded="true" signature="1847:1912" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolCompleteDecision.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            <state relative-caret-position="84">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
-                <marker date="1611766819103" expanded="true" signature="6:53" ph="..." />
-                <marker date="1611766819103" expanded="true" signature="97:787" ph="{...}" />
-                <marker date="1611766819103" expanded="true" signature="222:785" ph="{...}" />
-                <marker date="1611766819103" expanded="true" signature="292:779" ph="{...}" />
+                <marker date="1611852823398" expanded="true" signature="6:73" ph="..." />
+                <marker date="1611852823398" expanded="true" signature="148:1222" ph="{...}" />
+                <marker date="1611852823398" expanded="true" signature="243:373" ph="{...}" />
+                <marker date="1611852823398" expanded="true" signature="261:367" ph="{...}" />
+                <marker date="1611852823398" expanded="true" signature="574:724" ph="{...}" />
+                <marker date="1611852823398" expanded="true" signature="857:1219" ph="{...}" />
+                <marker date="1611852823398" expanded="true" signature="1086:1148" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankIdleDecision.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankNpc.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="194">
+              <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+              <folding>
+                <marker date="1611852543048" expanded="false" signature="6:191" ph="..." />
+                <marker date="1611852543048" expanded="true" signature="216:4021" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="362:4019" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="1159:1336" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="1185:1326" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="1427:1649" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="1476:1639" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="1695:1750" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="1780:1849" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="2194:2642" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="2670:2832" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="2901:3127" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="2946:3117" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="3181:3287" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="3331:3653" ph="{...}" />
+                <marker date="1611852543048" expanded="true" signature="3542:3643" ph="/* remainingDistance = agent.remainingDistance; ... */" />
+                <marker date="1611852543048" expanded="true" signature="3690:4013" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/RangeTrigger.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+              <folding>
+                <marker date="1611851037018" expanded="false" signature="6:154" ph="..." />
+                <marker date="1611851037018" expanded="true" signature="179:1969" ph="{...}" />
+                <marker date="1611851037018" expanded="true" signature="307:1967" ph="{...}" />
+                <marker date="1611851037018" expanded="true" signature="635:746" ph="{...}" />
+                <marker date="1611851037018" expanded="true" signature="799:1223" ph="{...}" />
+                <marker date="1611851037018" expanded="true" signature="912:1161" ph="{...}" />
+                <marker date="1611851037018" expanded="true" signature="1275:1423" ph="{...}" />
+                <marker date="1611851037018" expanded="true" signature="1483:1961" ph="{...}" />
+                <marker date="1611851037018" expanded="true" signature="1632:1917" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/IDestroyable.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding>
+                <marker date="1611852519148" expanded="true" signature="29:219" ph="{...}" />
+                <marker date="1611852519148" expanded="true" signature="65:217" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmosModule/Scripts/FastGizmos.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <caret line="56" column="28" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="28" />
               <folding>
-                <marker date="1611766096812" expanded="true" signature="6:53" ph="..." />
-                <marker date="1611766096812" expanded="true" signature="97:621" ph="{...}" />
-                <marker date="1611766096812" expanded="true" signature="202:618" ph="{...}" />
-                <marker date="1611766096812" expanded="true" signature="272:612" ph="{...}" />
+                <marker date="1611759646338" expanded="true" signature="0:80" ph="/* FastGizmos Tool by SVerde ... */" />
+                <marker date="1611759646338" expanded="true" signature="149:8044" ph="{...}" />
+                <marker date="1611759646338" expanded="true" signature="196:8042" ph="{...}" />
+                <marker date="1611759646338" expanded="true" signature="264:640" ph="{...}" />
+                <marker date="1611759646338" expanded="true" signature="3467:7779" ph="{...}" />
+                <marker date="1611759646338" expanded="true" signature="3588:7728" ph="{...}" />
+                <marker date="1611759646338" expanded="true" signature="7814:8036" ph="{...}" />
+                <marker date="1611759646338" expanded="true" signature="7874:8004" ph="{...}" />
+                <marker date="1611759646338" expanded="true" signature="7924:7990" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Controller.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+              <folding>
+                <marker date="1611852120528" expanded="true" signature="6:78" ph="..." />
+                <marker date="1611852120528" expanded="true" signature="94:816" ph="{...}" />
+                <marker date="1611852120528" expanded="true" signature="140:814" ph="{...}" />
+                <marker date="1611852120528" expanded="true" signature="291:381" ph="{...}" />
+                <marker date="1611852120528" expanded="true" signature="411:567" ph="{...}" />
+                <marker date="1611852120528" expanded="true" signature="611:808" ph="{...}" />
+                <marker date="1611852120528" expanded="true" signature="646:798" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <marker date="1611852557768" expanded="true" signature="6:64" ph="..." />
+                <marker date="1611852557768" expanded="true" signature="82:915" ph="{...}" />
+                <marker date="1611852557768" expanded="true" signature="127:913" ph="{...}" />
+                <marker date="1611852557768" expanded="true" signature="243:668" ph="{...}" />
+                <marker date="1611852557768" expanded="true" signature="398:658" ph="{...}" />
+                <marker date="1611852557768" expanded="true" signature="729:778" ph="{...}" />
+                <marker date="1611852557768" expanded="true" signature="815:907" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/AppSystem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+              <folding>
+                <marker date="1611845703469" expanded="true" signature="34:245" ph="{...}" />
+                <marker date="1611845703469" expanded="true" signature="88:243" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -179,21 +257,31 @@
     <setting file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmosModule/Editor/FastGizmosHandleTextEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/NPCManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankChaseDecision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankNpc.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankPatrolAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/IDestroyable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmTransition.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/StateMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Extensions/LayerMaskExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolCompleteDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankIdleDecision.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/PathologicalGames/PoolManager/SpawnPool.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankGetNearestAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankIdleAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/RangeTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolDecision.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/TankController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankChaseAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankGetNearestDecision.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/TankMachine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmosModule/Scripts/FastGizmos.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Core/AppSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmosModule/Editor/FastGizmosEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -209,19 +297,31 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmTransition.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/StateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/TankMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/NPCManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankGetNearestAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankGetNearestDecision.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankChaseDecision.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankChaseAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankIdleAction.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankPatrolAction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankIdleDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolDecision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Extensions/LayerMaskExtensions.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/TankMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankChaseAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankGetNearestAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankPatrolAction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankChaseDecision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankGetNearestDecision.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolCompleteDecision.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ISystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TankController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/AppSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/RangeTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Core/IDestroyable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankNpc.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/TankController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/NPCManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Bullet.cs" />
       </list>
     </option>
   </component>
@@ -236,6 +336,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -278,36 +380,31 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Core" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Extensions" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="FSM Pluggable" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="TanksSimpleAi" type="1045f7f1:UnityExplorerNode" />
+              <item name="Player" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="TanksSimpleAi" type="1045f7f1:UnityExplorerNode" />
-              <item name="TankPFSM" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="TanksSimpleAi" type="1045f7f1:UnityExplorerNode" />
-              <item name="TankPFSM" type="1045f7f1:UnityExplorerNode" />
-              <item name="Actions" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="TanksSimpleAi" type="1045f7f1:UnityExplorerNode" />
-              <item name="TankPFSM" type="1045f7f1:UnityExplorerNode" />
-              <item name="Decisions" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
@@ -319,11 +416,9 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,12 +464,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611759149284</updated>
-      <workItem from="1611759150384" duration="5523000" />
+      <workItem from="1611759150384" duration="5837000" />
+      <workItem from="1611824653256" duration="13241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5523000" />
+    <option name="totallyTimeSpent" value="19078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -389,20 +485,11 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.141258" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14285715" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -410,13 +497,22 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,76 +531,16 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/SmTransition.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/SmState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/SmDecision.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/SmAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/StateMachine.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Editor/FastGizmosEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Editor/FastGizmosHandleTextEditor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Scripts/FastGizmos.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Scripts/FastGizmosExtra.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Scripts/FastGizmosHandleText.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/SmTransition.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/SmState.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/SmDecision.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/SmAction.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/_SM Pluggable/StateMachine.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Editor/FastGizmosEditor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Editor/FastGizmosHandleTextEditor.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Scripts/FastGizmos.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Scripts/FastGizmosExtra.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmos/Scripts/FastGizmosHandleText.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmosModule/Editor/FastGizmosHandleTextEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -534,150 +570,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/NPCManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <marker date="1611764337923" expanded="true" signature="6:52" ph="..." />
-            <marker date="1611764337923" expanded="true" signature="77:540" ph="{...}" />
-            <marker date="1611764337923" expanded="true" signature="123:538" ph="{...}" />
-            <marker date="1611764337923" expanded="true" signature="204:532" ph="{...}" />
-            <marker date="1611764337923" expanded="true" signature="314:522" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <marker date="1611764803843" expanded="true" signature="6:109" ph="..." />
-            <marker date="1611764803843" expanded="true" signature="134:1234" ph="{...}" />
-            <marker date="1611764803843" expanded="true" signature="318:1232" ph="{...}" />
-            <marker date="1611764803843" expanded="true" signature="600:851" ph="{...}" />
-            <marker date="1611764803843" expanded="true" signature="903:1225" ph="{...}" />
-            <marker date="1611764803843" expanded="true" signature="1114:1215" ph="/* remainingDistance = agent.remainingDistance; ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/TankMachine.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <marker date="1611764032643" expanded="true" signature="54:138" ph="{...}" />
-            <marker date="1611764032643" expanded="true" signature="116:136" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankChaseAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <marker date="1611766096683" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611766096683" expanded="true" signature="95:1814" ph="{...}" />
-            <marker date="1611766096683" expanded="true" signature="196:1812" ph="{...}" />
-            <marker date="1611766096683" expanded="true" signature="267:908" ph="{...}" />
-            <marker date="1611766096683" expanded="true" signature="975:1708" ph="{...}" />
-            <marker date="1611766096683" expanded="true" signature="1593:1698" ph="/* if(parent.targetActor != null) ... */" />
-            <marker date="1611766096683" expanded="true" signature="1773:1805" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankGetNearestAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <marker date="1611765506243" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611765506243" expanded="true" signature="95:898" ph="{...}" />
-            <marker date="1611765506243" expanded="true" signature="206:896" ph="{...}" />
-            <marker date="1611765506243" expanded="true" signature="347:821" ph="{...}" />
-            <marker date="1611765506243" expanded="true" signature="762:811" ph="/* 2- do action ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankIdleAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <marker date="1611766096873" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611766096873" expanded="true" signature="95:1100" ph="{...}" />
-            <marker date="1611766096873" expanded="true" signature="194:1098" ph="{...}" />
-            <marker date="1611766096873" expanded="true" signature="265:628" ph="{...}" />
-            <marker date="1611766096873" expanded="true" signature="695:728" ph="{...}" />
-            <marker date="1611766096873" expanded="true" signature="793:1092" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankPatrolAction.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <marker date="1611766096913" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611766096913" expanded="true" signature="95:1810" ph="{...}" />
-            <marker date="1611766096913" expanded="true" signature="198:1808" ph="{...}" />
-            <marker date="1611766096913" expanded="true" signature="269:642" ph="{...}" />
-            <marker date="1611766096913" expanded="true" signature="546:632" ph="/* move &amp; check reach ... */" />
-            <marker date="1611766096913" expanded="true" signature="709:1704" ph="{...}" />
-            <marker date="1611766096913" expanded="true" signature="1329:1694" ph="/* if (!vehicleAi.onPatrol) return; ... */" />
-            <marker date="1611766096913" expanded="true" signature="1769:1801" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankGetNearestDecision.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding>
-            <marker date="1611765930733" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611765930733" expanded="true" signature="97:779" ph="{...}" />
-            <marker date="1611765930733" expanded="true" signature="214:777" ph="{...}" />
-            <marker date="1611765930733" expanded="true" signature="284:771" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankIdleDecision.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <marker date="1611766096812" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611766096812" expanded="true" signature="97:621" ph="{...}" />
-            <marker date="1611766096812" expanded="true" signature="202:618" ph="{...}" />
-            <marker date="1611766096812" expanded="true" signature="272:612" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolDecision.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <marker date="1611766096753" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611766096753" expanded="true" signature="97:622" ph="{...}" />
-            <marker date="1611766096753" expanded="true" signature="206:619" ph="{...}" />
-            <marker date="1611766096753" expanded="true" signature="276:613" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmAction.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="132">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
           <folding>
             <marker date="1611761975283" expanded="false" signature="6:39" ph="..." />
@@ -689,7 +584,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmDecision.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
+        <state relative-caret-position="88">
           <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <marker date="1611763407733" expanded="true" signature="43:205" ph="{...}" />
@@ -700,7 +595,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmState.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
+        <state relative-caret-position="176">
           <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
           <folding>
             <marker date="1611764402273" expanded="false" signature="6:57" ph="..." />
@@ -720,7 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/SmTransition.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="132">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
             <marker date="1611761975443" expanded="true" signature="49:317" ph="{...}" />
@@ -729,10 +624,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Extensions/LayerMaskExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding>
+            <marker date="1611827926763" expanded="true" signature="40:262" ph="{...}" />
+            <marker date="1611827926763" expanded="true" signature="86:260" ph="{...}" />
+            <marker date="1611827926763" expanded="true" signature="172:254" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM Pluggable/StateMachine.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="37" column="42" lean-forward="true" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="42" />
+        <state relative-caret-position="-114">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding>
             <marker date="1611764009263" expanded="false" signature="6:128" ph="..." />
             <marker date="1611764009263" expanded="true" signature="153:1920" ph="{...}" />
@@ -748,28 +655,650 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/TankMachine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <marker date="1611842055329" expanded="true" signature="54:131" ph="{...}" />
+            <marker date="1611842055329" expanded="true" signature="109:129" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankChaseAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <marker date="1611842196289" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611842196289" expanded="true" signature="95:1786" ph="{...}" />
+            <marker date="1611842196289" expanded="true" signature="196:1784" ph="{...}" />
+            <marker date="1611842196289" expanded="true" signature="267:894" ph="{...}" />
+            <marker date="1611842196289" expanded="true" signature="961:1680" ph="{...}" />
+            <marker date="1611842196289" expanded="true" signature="1565:1670" ph="/* if(parent.targetActor != null) ... */" />
+            <marker date="1611842196289" expanded="true" signature="1745:1777" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankGetNearestAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <marker date="1611842196399" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611842196399" expanded="true" signature="95:884" ph="{...}" />
+            <marker date="1611842196399" expanded="true" signature="206:882" ph="{...}" />
+            <marker date="1611842196399" expanded="true" signature="347:807" ph="{...}" />
+            <marker date="1611842196399" expanded="true" signature="748:797" ph="/* 2- do action ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankIdleAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1611766096873" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611766096873" expanded="true" signature="95:1100" ph="{...}" />
+            <marker date="1611766096873" expanded="true" signature="194:1098" ph="{...}" />
+            <marker date="1611766096873" expanded="true" signature="265:628" ph="{...}" />
+            <marker date="1611766096873" expanded="true" signature="695:728" ph="{...}" />
+            <marker date="1611766096873" expanded="true" signature="793:1092" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Actions/TankPatrolAction.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding>
+            <marker date="1611842196339" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611842196339" expanded="true" signature="95:1796" ph="{...}" />
+            <marker date="1611842196339" expanded="true" signature="198:1794" ph="{...}" />
+            <marker date="1611842196339" expanded="true" signature="269:642" ph="{...}" />
+            <marker date="1611842196339" expanded="true" signature="546:632" ph="/* move &amp; check reach ... */" />
+            <marker date="1611842196339" expanded="true" signature="709:1690" ph="{...}" />
+            <marker date="1611842196339" expanded="true" signature="1315:1680" ph="/* if (!vehicleAi.onPatrol) return; ... */" />
+            <marker date="1611842196339" expanded="true" signature="1755:1787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankChaseDecision.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="264">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
           <folding>
-            <marker date="1611765930873" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611765930873" expanded="true" signature="97:770" ph="{...}" />
-            <marker date="1611765930873" expanded="true" signature="204:767" ph="{...}" />
-            <marker date="1611765930873" expanded="true" signature="274:761" ph="{...}" />
+            <marker date="1611842196369" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611842196369" expanded="true" signature="97:756" ph="{...}" />
+            <marker date="1611842196369" expanded="true" signature="204:753" ph="{...}" />
+            <marker date="1611842196369" expanded="true" signature="274:747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankGetNearestDecision.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <marker date="1611842196259" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611842196259" expanded="true" signature="97:765" ph="{...}" />
+            <marker date="1611842196259" expanded="true" signature="214:763" ph="{...}" />
+            <marker date="1611842196259" expanded="true" signature="284:757" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankIdleDecision.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <marker date="1611766096812" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611766096812" expanded="true" signature="97:621" ph="{...}" />
+            <marker date="1611766096812" expanded="true" signature="202:618" ph="{...}" />
+            <marker date="1611766096812" expanded="true" signature="272:612" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolCompleteDecision.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        <state relative-caret-position="264">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
           <folding>
-            <marker date="1611766819103" expanded="true" signature="6:53" ph="..." />
-            <marker date="1611766819103" expanded="true" signature="97:787" ph="{...}" />
-            <marker date="1611766819103" expanded="true" signature="222:785" ph="{...}" />
-            <marker date="1611766819103" expanded="true" signature="292:779" ph="{...}" />
+            <marker date="1611842196429" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611842196429" expanded="true" signature="97:773" ph="{...}" />
+            <marker date="1611842196429" expanded="true" signature="222:771" ph="{...}" />
+            <marker date="1611842196429" expanded="true" signature="292:765" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankPFSM/Decisions/TankPatrolDecision.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding>
+            <marker date="1611766096753" expanded="false" signature="6:53" ph="..." />
+            <marker date="1611766096753" expanded="true" signature="97:622" ph="{...}" />
+            <marker date="1611766096753" expanded="true" signature="206:619" ph="{...}" />
+            <marker date="1611766096753" expanded="true" signature="276:613" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ISystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="47" lean-forward="true" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/PathologicalGames/PoolManager/SpawnPool.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="981">
+          <caret line="2077" column="15" lean-forward="true" selection-start-line="2077" selection-start-column="15" selection-end-line="2077" selection-end-column="15" />
+          <folding>
+            <marker date="1478918021000" expanded="true" signature="0:307" ph="/* &lt;Licensing&gt; ... */" />
+            <marker date="1478918021000" expanded="false" signature="314:386" ph="..." />
+            <marker date="1478918021000" expanded="true" signature="416:80565" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="428:1887" ph="/// &lt;description&gt; ... " />
+            <marker date="1478918021000" expanded="true" signature="2018:44619" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="2033:4158" ph="Inspector Parameters" />
+            <marker date="1478918021000" expanded="true" signature="2070:2539" ph="/// Returns the name of this pool used by PoolManager. This will always be the ... " />
+            <marker date="1478918021000" expanded="true" signature="2586:2693" ph="/// Matches new instances to the SpawnPool GameObject's scale. ... " />
+            <marker date="1478918021000" expanded="true" signature="2747:2854" ph="/// Matches new instances to the SpawnPool GameObject's layer. ... " />
+            <marker date="1478918021000" expanded="true" signature="2908:3024" ph="/// If True, do not reparent instances under the SpawnPool's Transform. ... " />
+            <marker date="1478918021000" expanded="true" signature="3072:3222" ph="/// If true, the Pool's group, GameObject, will be set to Unity's  ... " />
+            <marker date="1478918021000" expanded="true" signature="3260:3466" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="3271:3317" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="3328:3462" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="3563:3650" ph="/// Print information to the Unity Console ... " />
+            <marker date="1478918021000" expanded="true" signature="3701:3823" ph="/// A list of PreloadDef options objects used by the inspector for user input ... " />
+            <marker date="1478918021000" expanded="true" signature="3913:4023" ph="/// Used by the inspector to store this instances foldout states. ... " />
+            <marker date="1478918021000" expanded="false" signature="4170:5581" ph="Public Code-only Parameters" />
+            <marker date="1478918021000" expanded="true" signature="4214:4379" ph="/// The time in seconds to stop waiting for particles to die. ... " />
+            <marker date="1478918021000" expanded="true" signature="4440:4634" ph="/// The group is an empty game object which will be the parent of all ... " />
+            <marker date="1478918021000" expanded="true" signature="4697:4799" ph="/// Returns the prefab of the given name (dictionary key) ... " />
+            <marker date="1478918021000" expanded="true" signature="5047:5165" ph="/// Readonly access to prefab pools via a dictionary&lt;string, PrefabPool&gt;. ... " />
+            <marker date="1478918021000" expanded="true" signature="5223:5534" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="5249:5524" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="5593:5796" ph="Private Properties" />
+            <marker date="1478918021000" expanded="false" signature="5808:16547" ph="Constructor and Init" />
+            <marker date="1478918021000" expanded="true" signature="5865:7947" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="6203:6739" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="6234:6586" ph="/* Automatically Remove &quot;Pool&quot; from names to allow users to name prefabs in a ... */" />
+            <marker date="1478918021000" expanded="true" signature="6996:7747" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="7076:7372" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="7390:7585" ph="/* Init the PrefabPool's GameObject cache because it can't do it. ... */" />
+            <marker date="1478918021000" expanded="true" signature="7761:7896" ph="/* Add this SpawnPool to PoolManager for use. This is done last to lower the ... */" />
+            <marker date="1478918021000" expanded="true" signature="8113:8718" ph="/// This can be used to intercept Instantiate and Destroy to implement your own handling. See  ... " />
+            <marker date="1478918021000" expanded="true" signature="8773:9197" ph="/// This can be used to intercept Instantiate and Destroy to implement your own handling. See  ... " />
+            <marker date="1478918021000" expanded="true" signature="9246:9555" ph="/// See the InstantiateDelegates docs ... " />
+            <marker date="1478918021000" expanded="true" signature="9643:9841" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="9689:9755" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="9763:9837" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="9850:10018" ph="/// See the DestroyDelegates docs ... " />
+            <marker date="1478918021000" expanded="true" signature="10071:10229" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="10113:10160" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="10168:10225" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="10240:10355" ph="/// Runs when this group GameObject is destroyed and executes clean-up ... " />
+            <marker date="1478918021000" expanded="true" signature="10388:11035" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="10842:10877" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="11046:12872" ph="/// Creates a new PrefabPool in this Pool and instances the requested  ... " />
+            <marker date="1478918021000" expanded="true" signature="12926:14455" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="12934:13424" ph="/* Only add a PrefabPool once. Uses a GameObject comparison on the prefabs ... */" />
+            <marker date="1478918021000" expanded="true" signature="13798:13900" ph="/* Used internally to reference back to this spawnPool for things ... */" />
+            <marker date="1478918021000" expanded="true" signature="14205:14451" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="14466:14985" ph="/// Add an existing instance to this pool. This is used during game start  ... " />
+            <marker date="1478918021000" expanded="true" signature="15075:16507" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="15147:16221" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="15220:15369" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="15440:16207" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="15875:16008" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="16559:17862" ph="List Overrides" />
+            <marker date="1478918021000" expanded="true" signature="16590:16974" ph="/// Not Implimented. Use Spawn() to properly add items to the pool. ... " />
+            <marker date="1478918021000" expanded="true" signature="17014:17178" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="17189:17557" ph="/// Not Implimented. Use Despawn() to properly manage items that should remain  ... " />
+            <marker date="1478918021000" expanded="true" signature="17600:17827" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="17874:36293" ph="Pool Functionality" />
+            <marker date="1478918021000" expanded="true" signature="17909:20195" ph="/// &lt;description&gt; ... " />
+            <marker date="1478918021000" expanded="true" signature="20291:23447" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="20371:22300" ph="Use from Pool" />
+            <marker date="1478918021000" expanded="true" signature="20454:22263" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="20485:20632" ph="/* Determine if the prefab was ever used as explained in the docs ... */" />
+            <marker date="1478918021000" expanded="true" signature="20704:22249" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="20743:20955" ph="/* Now we know the prefabPool for this prefab exists. ... */" />
+            <marker date="1478918021000" expanded="true" signature="21050:21146" ph="/* This only happens if the limit option was used for this ... */" />
+            <marker date="1478918021000" expanded="true" signature="21362:21426" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="21523:21651" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="21673:21903" ph="/* Add to internal list - holds only active instances in the pool ... */" />
+            <marker date="1478918021000" expanded="false" signature="22315:23193" ph="New PrefabPool" />
+            <marker date="1478918021000" expanded="true" signature="22779:22837" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="22917:23037" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="23458:23550" ph="/// See primary Spawn method for documentation. ... " />
+            <marker date="1478918021000" expanded="true" signature="23628:23827" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="23838:24052" ph="/// See primary Spawn method for documentation. ... " />
+            <marker date="1478918021000" expanded="true" signature="24101:24195" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="24206:24431" ph="/// See primary Spawn method for documentation. ... " />
+            <marker date="1478918021000" expanded="true" signature="24498:24600" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="24609:25158" ph="GameObject Overloads" />
+            <marker date="1478918021000" expanded="true" signature="24728:24789" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="24865:24918" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="24965:25008" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="25073:25124" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="25173:25411" ph="/// See primary Spawn method for documentation. ... " />
+            <marker date="1478918021000" expanded="true" signature="25461:25577" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="25588:25817" ph="/// See primary Spawn method for documentation. ... " />
+            <marker date="1478918021000" expanded="true" signature="25885:26009" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="26020:26331" ph="/// See primary Spawn method for documentation. ... " />
+            <marker date="1478918021000" expanded="true" signature="26410:26536" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="26547:26851" ph="/// See primary Spawn method for documentation. ... " />
+            <marker date="1478918021000" expanded="true" signature="26980:27114" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="27226:27319" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="27374:27568" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="27640:27823" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="27989:28456" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="28467:29825" ph="///&#9;See docs for SpawnInstance(Transform prefab, Vector3 pos, Quaternion rot) ... " />
+            <marker date="1478918021000" expanded="true" signature="29949:30038" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="30048:30367" ph="/// See primary Spawn ParticleSystem method for documentation. ... " />
+            <marker date="1478918021000" expanded="true" signature="30545:31112" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="31124:31461" ph="///&#9;If the passed object is managed by the SpawnPool, it will be  ... " />
+            <marker date="1478918021000" expanded="true" signature="31509:33035" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="31661:32404" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="31745:31888" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="32001:32390" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="32516:32752" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="32766:32981" ph="/* Remove from the internal list. Only active instances are kept. ... */" />
+            <marker date="1478918021000" expanded="true" signature="33046:33304" ph="///&#9;See docs for Despawn(Transform instance) for basic functionalty information. ... " />
+            <marker date="1478918021000" expanded="true" signature="33370:33606" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="33617:34059" ph="/// &lt;description&gt; ... " />
+            <marker date="1478918021000" expanded="true" signature="34122:34235" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="34246:34504" ph="///&#9;See docs for Despawn(Transform instance) for basic functionalty information. ... " />
+            <marker date="1478918021000" expanded="true" signature="34585:34699" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="34710:34968" ph="/// Waits X seconds before despawning. See the docs for DespawnAfterSeconds() ... " />
+            <marker date="1478918021000" expanded="true" signature="35087:35602" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="35178:35459" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="35613:35717" ph="/// &lt;description&gt; ... " />
+            <marker date="1478918021000" expanded="true" signature="35750:35926" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="35937:36131" ph="/// &lt;description&gt; ... " />
+            <marker date="1478918021000" expanded="true" signature="36181:36254" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="36305:41099" ph="Utility Functions" />
+            <marker date="1478918021000" expanded="true" signature="36339:36543" ph="/// Returns the prefab pool for a given prefab. ... " />
+            <marker date="1478918021000" expanded="true" signature="36601:37108" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="36673:37043" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="37119:37324" ph="/// Returns the prefab pool for a given prefab. ... " />
+            <marker date="1478918021000" expanded="true" signature="37383:37879" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="37455:37814" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="37890:38189" ph="/// Returns the prefab used to create the passed instance.  ... " />
+            <marker date="1478918021000" expanded="true" signature="38244:38498" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="38509:38810" ph="/// Returns the prefab used to create the passed instance.  ... " />
+            <marker date="1478918021000" expanded="true" signature="38867:39133" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="39197:39607" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="39383:39428" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="39512:39555" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="39730:41061" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="39753:39917" ph="/* Wait for the delay time to complete ... */" />
+            <marker date="1478918021000" expanded="true" signature="40263:40895" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="40979:41051" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="41111:41223" ph="/// Returns a formatted string showing all the spawned member names ... " />
+            <marker date="1478918021000" expanded="true" signature="41265:41652" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="41663:42073" ph="/// Read-only index access. You can still modify the instance at the given index. ... " />
+            <marker date="1478918021000" expanded="true" signature="42114:42259" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="42269:42461" ph="/// The name &quot;Contains&quot; is misleading so IsSpawned was implimented instead. ... " />
+            <marker date="1478918021000" expanded="true" signature="42506:42664" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="42675:43033" ph="/// Used by OTHERList.AddRange() ... " />
+            <marker date="1478918021000" expanded="true" signature="43095:43168" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="43179:43291" ph="/// Returns the number of items in this (the collection). Readonly. ... " />
+            <marker date="1478918021000" expanded="true" signature="43316:43384" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="43395:43533" ph="/// Impliments the ability to use this list in a foreach loop ... " />
+            <marker date="1478918021000" expanded="true" signature="43587:43712" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="43722:43860" ph="/// Impliments the ability to use this list in a foreach loop ... " />
+            <marker date="1478918021000" expanded="true" signature="43908:44033" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="44627:45109" ph="/// This class is used to display a more complex user entry interface in the  ... " />
+            <marker date="1478918021000" expanded="true" signature="45163:74898" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="45179:50626" ph="Public Properties Available in the Editor" />
+            <marker date="1478918021000" expanded="true" signature="45237:45307" ph="/// The prefab to preload ... " />
+            <marker date="1478918021000" expanded="true" signature="45350:45468" ph="/// A reference of the prefab's GameObject stored for performance reasons ... " />
+            <marker date="1478918021000" expanded="true" signature="45559:45642" ph="/// The number of instances to preload ... " />
+            <marker date="1478918021000" expanded="true" signature="45690:45779" ph="/// Displays the 'preload over time' options ... " />
+            <marker date="1478918021000" expanded="true" signature="45830:45947" ph="/// The number of frames it will take to preload all requested instances ... " />
+            <marker date="1478918021000" expanded="true" signature="45995:46105" ph="/// The number of seconds to wait before preloading any instances ... " />
+            <marker date="1478918021000" expanded="true" signature="46154:46675" ph="/// Limits the number of instances allowed in the game. Turning this ON ... " />
+            <marker date="1478918021000" expanded="true" signature="46729:46848" ph="/// This is the max number of instances allowed if 'limitInstances' is ON. ... " />
+            <marker date="1478918021000" expanded="true" signature="46896:47261" ph="/// FIFO stands for &quot;first-in-first-out&quot;. Normally, limiting instances will ... " />
+            <marker date="1478918021000" expanded="true" signature="47356:48842" ph="/// Turn this ON to activate the culling feature for this Pool.  ... " />
+            <marker date="1478918021000" expanded="true" signature="48895:49005" ph="/// The number of TOTAL (spawned + despawned) instances to keep.  ... " />
+            <marker date="1478918021000" expanded="true" signature="49050:49389" ph="/// The amount of time, in seconds, to wait before culling. This is timed  ... " />
+            <marker date="1478918021000" expanded="true" signature="49434:49544" ph="/// The maximum number of instances to destroy per this.cullDelay ... " />
+            <marker date="1478918021000" expanded="true" signature="49593:49831" ph="/// Prints information during run-time to make debugging easier. This will  ... " />
+            <marker date="1478918021000" expanded="true" signature="49955:50244" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="49981:50234" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="50373:50529" ph="/// Used internally to reference back to the owner spawnPool for things like ... " />
+            <marker date="1478918021000" expanded="false" signature="50637:52494" ph="Constructor and Self-Destruction" />
+            <marker date="1478918021000" expanded="true" signature="50686:50784" ph="/// &lt;description&gt; ... " />
+            <marker date="1478918021000" expanded="true" signature="50828:50929" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="50939:51043" ph="/// &lt;description&gt; ... " />
+            <marker date="1478918021000" expanded="true" signature="51085:51257" ph="/// &lt;description&gt; ... " />
+            <marker date="1478918021000" expanded="true" signature="51310:51486" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="51497:51585" ph="/// Run by a SpawnPool when it is destroyed ... " />
+            <marker date="1478918021000" expanded="true" signature="51622:52442" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="52505:73330" ph="Pool Functionality" />
+            <marker date="1478918021000" expanded="true" signature="52540:52677" ph="/// Is set to true when the culling coroutine is started so another one ... " />
+            <marker date="1478918021000" expanded="true" signature="52732:52944" ph="/// The active instances associated with this prefab. This is the pool of ... " />
+            <marker date="1478918021000" expanded="true" signature="53115:53329" ph="/// The deactive instances associated with this prefab. This is the pool of ... " />
+            <marker date="1478918021000" expanded="true" signature="53507:53610" ph="/// Returns the total count of instances in the PrefabPool ... " />
+            <marker date="1478918021000" expanded="true" signature="53640:53931" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="53666:53921" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="53942:54051" ph="/// Used to make PreloadInstances() a one-time event. Read-only. ... " />
+            <marker date="1478918021000" expanded="true" signature="54124:54241" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="54252:54561" ph="/// Move an instance from despawned to spawned, set the position and  ... " />
+            <marker date="1478918021000" expanded="true" signature="54616:54685" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="54764:56389" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="55203:55413" ph="/* Notify instance of event OnDespawned for custom code additions. ... */" />
+            <marker date="1478918021000" expanded="true" signature="55714:55989" ph="/* Trigger culling if the feature is ON and the size  of the ... */" />
+            <marker date="1478918021000" expanded="true" signature="56219:56354" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="56401:56615" ph="/// Waits for 'cullDelay' in seconds and culls the 'despawned' list if  ... " />
+            <marker date="1478918021000" expanded="true" signature="56660:59624" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="57078:57198" ph="/* First time always pause, then check to see if the condition is ... */" />
+            <marker date="1478918021000" expanded="true" signature="57313:59212" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="57459:59095" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="57808:58509" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="58556:59077" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="59636:60192" ph="/// Move an instance from despawned to spawned, set the position and  ... " />
+            <marker date="1478918021000" expanded="true" signature="60262:62915" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="60285:60431" ph="/* Handle FIFO limiting if the limit was used and reached. ... */" />
+            <marker date="1478918021000" expanded="true" signature="60545:61299" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="60652:61038" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="61104:61228" ph="/* Because this is an internal despawn, we need to re-sync the SpawnPool's ... */" />
+            <marker date="1478918021000" expanded="true" signature="61435:61589" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="61606:62771" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="61637:61751" ph="/* Switch the instance we are using to the spawned list ... */" />
+            <marker date="1478918021000" expanded="true" signature="62007:62197" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="62528:62645" ph="/* Get an instance and set position, rotation and then ... */" />
+            <marker date="1478918021000" expanded="true" signature="62779:62876" ph="/* NOTE: OnSpawned message broadcast was moved to main Spawn() to ensure it runs last ... */" />
+            <marker date="1478918021000" expanded="true" signature="62927:63494" ph="/// Spawns a NEW instance of this prefab and adds it to the spawned list. ... " />
+            <marker date="1478918021000" expanded="true" signature="63654:65600" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="63806:64271" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="63858:64227" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="64731:64957" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="64741:64835" ph="/* The SpawnPool group is the parent by default ... */" />
+            <marker date="1478918021000" expanded="true" signature="65611:65841" ph="/// Sets the layer of the passed transform and all of its children ... " />
+            <marker date="1478918021000" expanded="true" signature="65905:66062" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="66073:66423" ph="/// Used by a SpawnPool to add an existing instance to this PrefabPool. ... " />
+            <marker date="1478918021000" expanded="true" signature="66487:66877" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="66592:66809" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="66888:67213" ph="/// Preload PrefabPool.preloadAmount instances if they don't already exist. In  ... " />
+            <marker date="1478918021000" expanded="true" signature="67254:71389" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="67277:67372" ph="/* If this has already been run for this PrefabPool, there is something ... */" />
+            <marker date="1478918021000" expanded="true" signature="67404:67920" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="67985:68265" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="68279:68416" ph="/* Protect against preloading more than the limit amount setting ... */" />
+            <marker date="1478918021000" expanded="true" signature="68494:69101" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="69115:69210" ph="/* Notify the user if they made a mistake using Culling ... */" />
+            <marker date="1478918021000" expanded="true" signature="69285:69848" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="69883:70681" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="69958:70595" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="70698:71379" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="70973:71267" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="71012:71150" ph="/* Preload... ... */" />
+            <marker date="1478918021000" expanded="true" signature="71436:73291" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="71747:71952" ph="/* Doesn't work for Windows8... ... */" />
+            <marker date="1478918021000" expanded="true" signature="72289:73191" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="72453:72536" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="72592:72968" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="72631:72769" ph="/* Preload... ... */" />
+            <marker date="1478918021000" expanded="true" signature="72986:73092" ph="/* Safety check in case something else is making instances. ... */" />
+            <marker date="1478918021000" expanded="false" signature="73341:74891" ph="Utilities" />
+            <marker date="1478918021000" expanded="true" signature="73367:73651" ph="/// If this PrefabPool spawned or despawned lists contain the given  ... " />
+            <marker date="1478918021000" expanded="true" signature="73701:74206" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="74224:74532" ph="/// Appends a number to the end of the passed transform. The number ... " />
+            <marker date="1478918021000" expanded="true" signature="74586:74862" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="74609:74783" ph="/* Rename by appending a number to make debugging easier ... */" />
+            <marker date="1478918021000" expanded="true" signature="74963:80562" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="74978:75608" ph="Public Custom Memebers" />
+            <marker date="1478918021000" expanded="true" signature="75017:75153" ph="/// Returns a formatted string showing all the prefab names ... " />
+            <marker date="1478918021000" expanded="true" signature="75195:75566" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="75619:76084" ph="Internal Dict Functionality" />
+            <marker date="1478918021000" expanded="true" signature="75756:75827" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="75877:75950" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="75982:76037" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="76095:80555" ph="Dict Functionality" />
+            <marker date="1478918021000" expanded="true" signature="76266:76358" ph="/// Get the number of SpawnPools in PoolManager ... " />
+            <marker date="1478918021000" expanded="true" signature="76433:76684" ph="/// Returns true if a prefab exists with the passed prefab name. ... " />
+            <marker date="1478918021000" expanded="true" signature="76735:76813" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="76823:77147" ph="/// Used to get a prefab when the user is not sure if the prefabName is used. ... " />
+            <marker date="1478918021000" expanded="true" signature="77220:77310" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="77320:80064" ph="Not Implimented" />
+            <marker date="1478918021000" expanded="true" signature="77397:77484" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="77531:77618" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="77686:77834" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="77877:78594" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="77903:78468" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="77971:78056" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="78101:78422" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="78484:78584" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="78635:78742" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="78661:78732" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="78789:78898" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="78815:78888" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="78909:80029" ph="ICollection&lt;KeyValuePair&lt;string, Transform&gt;&gt; Members" />
+            <marker date="1478918021000" expanded="true" signature="79183:79270" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="79433:79557" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="79680:79804" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="79870:79957" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="80077:80302" ph="IEnumerable&lt;KeyValuePair&lt;string, Transform&gt;&gt; Members" />
+            <marker date="1478918021000" expanded="true" signature="80213:80283" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="80314:80516" ph="IEnumerable Members" />
+            <marker date="1478918021000" expanded="true" signature="80427:80497" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="80641:82789" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="80767:80801" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="80805:81605" ph="IDictionary&lt;TKey,TValue&gt; Members" />
+            <marker date="1478918021000" expanded="true" signature="80907:80942" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="80979:81024" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81057:81098" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81149:81184" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81239:81295" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81332:81375" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81407:81455" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81416:81452" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81506:81591" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81515:81544" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81550:81588" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="81609:82349" ph="ICollection&lt;KeyValuePair&lt;TKey,TValue&gt;&gt; Members" />
+            <marker date="1478918021000" expanded="true" signature="81748:81783" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81839:81874" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="81931:81974" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="82048:82095" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="82115:82157" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="82183:82212" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="82300:82335" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="82353:82531" ph="IEnumerable&lt;KeyValuePair&lt;TKey,TValue&gt;&gt; Members" />
+            <marker date="1478918021000" expanded="true" signature="82473:82517" ph="{...}" />
+            <marker date="1478918021000" expanded="false" signature="82535:82651" ph="IEnumerable Members" />
+            <marker date="1478918021000" expanded="true" signature="82605:82637" ph="{...}" />
+            <marker date="1478918021000" expanded="true" signature="82706:82787" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Addons/Utils/FastGizmosModule/Scripts/FastGizmos.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="28" />
+          <folding>
+            <marker date="1611759646338" expanded="true" signature="0:80" ph="/* FastGizmos Tool by SVerde ... */" />
+            <marker date="1611759646338" expanded="true" signature="149:8044" ph="{...}" />
+            <marker date="1611759646338" expanded="true" signature="196:8042" ph="{...}" />
+            <marker date="1611759646338" expanded="true" signature="264:640" ph="{...}" />
+            <marker date="1611759646338" expanded="true" signature="3467:7779" ph="{...}" />
+            <marker date="1611759646338" expanded="true" signature="3588:7728" ph="{...}" />
+            <marker date="1611759646338" expanded="true" signature="7814:8036" ph="{...}" />
+            <marker date="1611759646338" expanded="true" signature="7874:8004" ph="{...}" />
+            <marker date="1611759646338" expanded="true" signature="7924:7990" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/RangeTrigger.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+          <folding>
+            <marker date="1611851037018" expanded="false" signature="6:154" ph="..." />
+            <marker date="1611851037018" expanded="true" signature="179:1969" ph="{...}" />
+            <marker date="1611851037018" expanded="true" signature="307:1967" ph="{...}" />
+            <marker date="1611851037018" expanded="true" signature="635:746" ph="{...}" />
+            <marker date="1611851037018" expanded="true" signature="799:1223" ph="{...}" />
+            <marker date="1611851037018" expanded="true" signature="912:1161" ph="{...}" />
+            <marker date="1611851037018" expanded="true" signature="1275:1423" ph="{...}" />
+            <marker date="1611851037018" expanded="true" signature="1483:1961" ph="{...}" />
+            <marker date="1611851037018" expanded="true" signature="1632:1917" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/AppSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding>
+            <marker date="1611845703469" expanded="true" signature="34:245" ph="{...}" />
+            <marker date="1611845703469" expanded="true" signature="88:243" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/Controller.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <folding>
+            <marker date="1611852120528" expanded="true" signature="6:78" ph="..." />
+            <marker date="1611852120528" expanded="true" signature="94:816" ph="{...}" />
+            <marker date="1611852120528" expanded="true" signature="140:814" ph="{...}" />
+            <marker date="1611852120528" expanded="true" signature="291:381" ph="{...}" />
+            <marker date="1611852120528" expanded="true" signature="411:567" ph="{...}" />
+            <marker date="1611852120528" expanded="true" signature="611:808" ph="{...}" />
+            <marker date="1611852120528" expanded="true" signature="646:798" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Core/IDestroyable.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <marker date="1611852519148" expanded="true" signature="29:219" ph="{...}" />
+            <marker date="1611852519148" expanded="true" signature="65:217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/TankNpc.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="53" column="9" lean-forward="true" selection-start-line="53" selection-start-column="9" selection-end-line="53" selection-end-column="9" />
+          <folding>
+            <marker date="1611852543048" expanded="false" signature="6:191" ph="..." />
+            <marker date="1611852543048" expanded="true" signature="216:4021" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="362:4019" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="1159:1336" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="1185:1326" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="1427:1649" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="1476:1639" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="1695:1750" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="1780:1849" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="2194:2642" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="2670:2832" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="2901:3127" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="2946:3117" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="3181:3287" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="3331:3653" ph="{...}" />
+            <marker date="1611852543048" expanded="true" signature="3542:3643" ph="/* remainingDistance = agent.remainingDistance; ... */" />
+            <marker date="1611852543048" expanded="true" signature="3690:4013" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/TankController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="62" column="29" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="29" />
+          <folding>
+            <marker date="1611852543082" expanded="true" signature="6:94" ph="..." />
+            <marker date="1611852543082" expanded="true" signature="112:3350" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="176:3348" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="953:1273" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="1029:1254" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="1335:1512" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="1361:1502" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="1715:1899" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="1959:2009" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="2055:2110" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="2139:2208" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="2235:2973" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="2398:2469" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="2508:2580" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="2619:2689" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="2729:2798" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="2870:2963" ph="{...}" />
+            <marker date="1611852543082" expanded="true" signature="3010:3333" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TanksSimpleAi/NPCManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding>
+            <marker date="1611852557728" expanded="true" signature="6:64" ph="..." />
+            <marker date="1611852557728" expanded="true" signature="89:894" ph="{...}" />
+            <marker date="1611852557728" expanded="true" signature="131:892" ph="{...}" />
+            <marker date="1611852557728" expanded="true" signature="238:646" ph="{...}" />
+            <marker date="1611852557728" expanded="true" signature="384:636" ph="{...}" />
+            <marker date="1611852557728" expanded="true" signature="709:759" ph="{...}" />
+            <marker date="1611852557728" expanded="true" signature="796:886" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <marker date="1611852557768" expanded="true" signature="6:64" ph="..." />
+            <marker date="1611852557768" expanded="true" signature="82:915" ph="{...}" />
+            <marker date="1611852557768" expanded="true" signature="127:913" ph="{...}" />
+            <marker date="1611852557768" expanded="true" signature="243:668" ph="{...}" />
+            <marker date="1611852557768" expanded="true" signature="398:658" ph="{...}" />
+            <marker date="1611852557768" expanded="true" signature="729:778" ph="{...}" />
+            <marker date="1611852557768" expanded="true" signature="815:907" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bullet.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <marker date="1611852823398" expanded="true" signature="6:73" ph="..." />
+            <marker date="1611852823398" expanded="true" signature="148:1222" ph="{...}" />
+            <marker date="1611852823398" expanded="true" signature="243:373" ph="{...}" />
+            <marker date="1611852823398" expanded="true" signature="261:367" ph="{...}" />
+            <marker date="1611852823398" expanded="true" signature="574:724" ph="{...}" />
+            <marker date="1611852823398" expanded="true" signature="857:1219" ph="{...}" />
+            <marker date="1611852823398" expanded="true" signature="1086:1148" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -10,9 +10,9 @@ namespace TanksSimpleAi.TankPFSM.Decisions
         public override bool Decide<T>(StateMachine<T> machine)
         {
             //1- check references & dependencies
-            if (typeof(T) != typeof(TankController) || machine.parent == null)
+            if (typeof(T) != typeof(TankNpc) || machine.parent == null)
                 throw new Exception("machine parent must be not null !!");
-            var parent = machine.parent as TankController;
+            var parent = machine.parent as TankNpc;
             if(parent == null) 
                 throw new Exception($"State machine parent is null : parent type [{typeof(T)}]");
 

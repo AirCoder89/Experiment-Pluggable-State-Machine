@@ -2,33 +2,33 @@ using System.Collections.Generic;
 using Core;
 using UnityEngine;
 
-namespace TanksSimpleAi
+namespace Player
 {
-    public class NPCManager : AppSystem
+    public class PlayerManager : AppSystem
     {
-        private List<TankNpc> _tanks;
+        private List<TankController> _players;
         public override void Initialize(Controller controller)
         {
             this._controller = controller;
-            _tanks = new List<TankNpc>();
+            _players = new List<TankController>();
             foreach (Transform child in transform)
             {
-                var t = child.gameObject.GetComponent<TankNpc>();
+                var t = child.gameObject.GetComponent<TankController>();
                 if(t == null) continue;
                 t.Initialize(this);
-                t.onDestroy += OnNpcTankDestroyed;
-                _tanks.Add(t);
+                t.onDestroy += OnPlayerDestroyed;
+                _players.Add(t);
             }
         }
 
-        private void OnNpcTankDestroyed(IDestroyable npcTank)
+        private void OnPlayerDestroyed(IDestroyable player)
         {
-            npcTank.Remove();
+            player.Remove();
         }
 
         public override void Tick()
         {
-            foreach (var tank in _tanks)
+            foreach (var tank in _players)
                 tank.Tick();
         }
     }
