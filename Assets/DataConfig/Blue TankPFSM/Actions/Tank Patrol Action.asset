@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d7debe2791746abb0b982a444dc52fe, type: 3}
   m_Name: Tank Patrol Action
   m_EditorClassIdentifier: 
+  distanceToReachWayPoint: 0.5
+  wayPoints:
+  - {x: 1.19, y: 0, z: 3.73}
+  - {x: -3.71, y: 0, z: -3.61}
+  - {x: 3.23, y: 0, z: -3.27}

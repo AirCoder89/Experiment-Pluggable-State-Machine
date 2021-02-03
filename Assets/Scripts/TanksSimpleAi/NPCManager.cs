@@ -25,11 +25,5 @@ namespace TanksSimpleAi
         {
             npcTank.Remove();
         }
-
-        public override void Tick()
-        {
-            foreach (var tank in _tanks)
-                tank.Tick();
-        }
     }
 }

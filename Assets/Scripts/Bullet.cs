@@ -7,7 +7,13 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public LayerMask ignoreLayers;
+    
     private Rigidbody _rb;
+    private bool _isInitialized;
+    private SpawnPool _pool;
+    private GameObject _owner;
+    private float _damage;
+    
     public Rigidbody rigidBody
     {
         get
@@ -17,11 +23,6 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    private bool _isInitialized;
-    private SpawnPool _pool;
-    private GameObject _owner;
-    private float _damage;
-    
     public void Initialize(SpawnPool pool, GameObject owner, float damage)
     {
         _damage = damage;
@@ -38,13 +39,8 @@ public class Bullet : MonoBehaviour
         if(ignoreLayers.CompareLayer(other.gameObject.layer)) return;
         if(_owner == other.gameObject) return;
         var destroyable = other.gameObject.GetComponent<IDestroyable>();
-        if (destroyable == null)
-        {
-            Remove();
-            return;
-        }
+        destroyable?.ApplyDamage(this._damage);
         Remove();
-        destroyable.ApplyDamage(this._damage);
     }
 
 }

@@ -1,6 +1,7 @@
 using System;
 using Addons.Utils.FastGizmosModule.Scripts;
 using Core;
+using HUD;
 using NaughtyAttributes;
 using PathologicalGames;
 using TanksSimpleAi.TankPFSM;
@@ -17,10 +18,8 @@ namespace TanksSimpleAi
         [BoxGroup("Internal References")][SerializeField][Required] private RangeTrigger range;
         [BoxGroup("Internal References")][SerializeField][Required] private Transform spawnPoint;
         [BoxGroup("Internal References")][SerializeField]private string bulletName;
+        [BoxGroup("Internal References")][SerializeField]private ProgressBar healthBar;
 
-        [BoxGroup("Internal References")] [SerializeField]
-        private FastGizmos targetGizmos;
-        
         [BoxGroup("Parameters")][SerializeField] float fireDamage = 5f;
         [BoxGroup("Parameters")][SerializeField] float fireInterval = 0.5f;
         [BoxGroup("Parameters")][SerializeField] float bulletSpeed = 20.0f;
@@ -37,6 +36,8 @@ namespace TanksSimpleAi
         
         public event Action<IDestroyable> onDestroy;
 
+        public bool isAlive { get; private set; }
+
         public float health
         {
             get => hp;
@@ -45,14 +46,25 @@ namespace TanksSimpleAi
                 hp = value;
                 if (!(hp <= 0f)) return;
                 hp = 0f;
+                isAlive = false;
                 onDestroy?.Invoke(this);
             }
         }
         public void ApplyDamage(float damage)
         {
             this.health -= damage;
+            healthBar.SetProgression(this.health);
         }
 
+        public float remainingDistance { get; set; }
+        public float targetDistance { get; set; }
+
+        
+        //Flags
+        public bool IsIdle { get; set; }
+        public bool IsWayPointsReached { get; set; }
+        public bool IsOnPatrol { get; set; }
+        
         public void Remove()
         {
             GameObject.Destroy(this.gameObject);
@@ -63,43 +75,37 @@ namespace TanksSimpleAi
         public Rigidbody rigidbody { get; private set; }
         
         private NPCManager _manager;
-        private Transform _target;
         private float _nextFire;
+        public Transform targetActor;
         
         public void Initialize(NPCManager manager)
         {
             health = 100f;
+            isAlive = health > 0f;
+            IsIdle = false;
+            _nextFire = Time.time + fireInterval;
             this._manager = manager;
             range.Initialize(this.transform);
             range.onDetect.AddListener(OnDetectEnemy);
             range.onLostDetection.AddListener(OnLostDetectionEnemy);
             machine = GetComponent<TankMachine>();
             machine.Initialize(this);
+            machine.StartMachine();
             agent = GetComponent<NavMeshAgent>();
             rigidbody = GetComponent<Rigidbody>();    
         }
 
-        public void Tick()
-        {
-            if(_target == null) return;
-            targetGizmos.fromV = transform.position;
-            targetGizmos.toV = _target.position;
-        }
-        
         private void OnLostDetectionEnemy(Transform target)
         {
-            if (_target == target)
+            if (targetActor == target)
             {
-                print("Lost detection");
-                _target = null;
-                targetGizmos.fromV = targetGizmos.toV = Vector3.zero;
+                targetActor = null;
             }
         }
 
         private void OnDetectEnemy(Transform target)
         {
-            print("Enemy detected ! : " + target.name);
-            _target = target;
+            targetActor = target;
         }
 
         public void MoveTo(Vector3 target)
@@ -108,16 +114,26 @@ namespace TanksSimpleAi
                 throw new NullReferenceException($"_agent [{typeof(NavMeshAgent)}] must be not null");
             
             agent.SetDestination(target);
-            //remainingDistance = agent.remainingDistance;
-            //targetDistance = agent.stoppingDistance;
+            remainingDistance = agent.remainingDistance;
+            targetDistance = agent.stoppingDistance;
         }
         
-        private void Fire()
+        [Button("Fire")]
+        public void Fire()
         {
-            var bullet = pool.Spawn(this.bulletName).gameObject.GetComponent<Bullet>();
-            bullet.Initialize(this.pool, this.gameObject, this.fireDamage);
-            bullet.transform.position = this.spawnPoint.position;
-            bullet.rigidBody.velocity = transform.forward * bulletSpeed;
+            if (Time.time > _nextFire)
+            {
+                print("NPC Fire");
+                _nextFire = Time.time + fireInterval;
+                var bullet = pool.Spawn(this.bulletName).gameObject.GetComponent<Bullet>();
+                bullet.Initialize(this.pool, this.gameObject, this.fireDamage);
+                bullet.transform.position = this.spawnPoint.position;
+                bullet.rigidBody.velocity = transform.forward * bulletSpeed;
+            }
         }
+
+        public void GetNearest() => targetActor = this.range.GetNearest();
+        public void OnStartPatrol() => IsOnPatrol = true;
+        public void OnEndPatrol() => IsOnPatrol = false;
     }
 }

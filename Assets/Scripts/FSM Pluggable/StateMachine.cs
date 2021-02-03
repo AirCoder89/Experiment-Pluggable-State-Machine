@@ -8,6 +8,8 @@ namespace FSM_Pluggable
 {
     public abstract class StateMachine<T> :MonoBehaviour where T : MonoBehaviour
     {
+        public event Action<SmState> OnStateChanged;
+        
         [SerializeField] private FastGizmos gizmos;
         [Required]public SmState startState;
         [ReadOnly] public SmState currentState;
@@ -15,13 +17,13 @@ namespace FSM_Pluggable
         [ReadOnly]public T parent;
 
         private bool _isRun;
-        
         public virtual void Initialize(T machineParent)
         {
             this.parent = machineParent;
             _isRun = false;
         }
 
+        [Button("Start machine")]
         public virtual void StartMachine()
         {
             TransitionToState(startState);
@@ -29,6 +31,7 @@ namespace FSM_Pluggable
             StartCoroutine(InternalTick());
         }
 
+        [Button("Stop machine")]
         public virtual void StopMachine()
         {
             _isRun = false;
@@ -51,9 +54,11 @@ namespace FSM_Pluggable
             if(nextState == currentState) return;
                 previousState = currentState;
                 currentState = nextState;
+                OnStateChanged?.Invoke(currentState);
                 if(previousState) previousState.OnExitState(this);
                 currentState.OnEnterState(this);
-                OnExitState ();
+                
+                OnExitState();
         }
 
         protected virtual void Tick(){}

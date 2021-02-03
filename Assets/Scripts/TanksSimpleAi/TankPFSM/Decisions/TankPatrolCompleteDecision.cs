@@ -7,17 +7,18 @@ namespace TanksSimpleAi.TankPFSM.Decisions
     [CreateAssetMenu(menuName = "PFSM/Decisions/PatrolComplete")]
     public class TankPatrolCompleteDecision : SmDecision
     {
-        public override bool Decide<T>(StateMachine<T> machine)
+        private TankMachine _machine;
+        
+        public override void OnEnterState<T>(StateMachine<T> machine)
         {
             //1- check references & dependencies
-            if (typeof(T) != typeof(TankNpc) || machine.parent == null)
-                throw new Exception("machine parent must be not null !!");
-            var parent = machine.parent as TankNpc;
-            if(parent == null) 
-                throw new Exception($"State machine parent is null : parent type [{typeof(T)}]");
+            _machine = machine as TankMachine;
+            if(_machine == null)   throw new Exception($"State machine is null : Decision [{typeof(TankPatrolCompleteDecision)}]");
+        }
 
-            return true;
-            //return parent.targetActor != null;
+        public override bool Decide<T>(StateMachine<T> machine)
+        {
+            return _machine.parent.IsWayPointsReached;
         }
     }
 }

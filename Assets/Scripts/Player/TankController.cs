@@ -21,6 +21,7 @@ namespace Player
 
 
         public event Action<IDestroyable> onDestroy;
+        public event Action<float> onTakeDamage;
          
                  public float health
                  {
@@ -30,6 +31,7 @@ namespace Player
                          hp = value;
                          if (!(hp <= 0f)) return;
                              hp = 0f;
+                             isAlive = false;
                              onDestroy?.Invoke(this);
                      }
                  }
@@ -47,24 +49,21 @@ namespace Player
         public Rigidbody rigidbody { get; private set; }
         private float _nextFire;
         private PlayerManager _manager;
-        
+        public bool isAlive { get; private set; }
 
         public void Initialize(PlayerManager manager)
         {
             health = 100f;
+            isAlive = health > 0f;
             _manager = manager;
             _nextFire = Time.time + fireInterval;
             rigidbody = GetComponent<Rigidbody>();    
         }
 
-        [Button("Apply Damage")]
-        private void AD()
-        {
-            ApplyDamage(10f);
-        }
         public void ApplyDamage(float damage)
         {
             this.health -= damage;
+            onTakeDamage?.Invoke(this.health);
         }
         public void Remove()
         {

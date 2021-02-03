@@ -7,18 +7,19 @@ namespace TanksSimpleAi.TankPFSM.Actions
     [CreateAssetMenu(menuName = "PFSM/Actions/GetNearest")]
     public class TankGetNearestAction : SmAction
     {
-        public override void OnEnter<T>(StateMachine<T> machine) {}
+        private TankMachine _machine;
+        
+        public override void OnEnter<T>(StateMachine<T> machine)
+        {
+            //1- check references & dependencies
+            _machine = machine as TankMachine;
+            if(_machine == null)   throw new Exception($"State machine is null : Action [{typeof(TankGetNearestAction)}]");
+        }
 
         public override void OnUpdate<T>(StateMachine<T> machine)
         {
-            //1- check references & dependencies
-            if (typeof(T) != typeof(TankNpc) || machine.parent == null)
-                throw new Exception("machine parent must be not null !!");
-            var parent = machine.parent as TankNpc;
-            if(parent == null) 
-                throw new Exception($"State machine parent is null : parent type [{typeof(T)}]");
             //2- do action
-            //parent.GetNearest();
+            _machine.parent.GetNearest();
         }
 
         public override void OnExit<T>(StateMachine<T> machine) {}

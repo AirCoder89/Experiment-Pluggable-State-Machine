@@ -14,6 +14,9 @@ namespace FSM_Pluggable
         public void OnEnterState<T>(StateMachine<T> machine) where T : MonoBehaviour
         {
             machine.SetGizmoColor(stateColor);
+            foreach (var transition in transitions)
+                transition.OnEnterState(machine);
+            
             for (var i = 0; i < actions.Length; i++) 
                 actions[i].OnEnter(machine);
         }

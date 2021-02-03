@@ -7,15 +7,17 @@ namespace TanksSimpleAi.TankPFSM.Decisions
     [CreateAssetMenu(menuName = "PFSM/Decisions/Patrol")]
     public class TankPatrolDecision : SmDecision
     {
-        public override bool Decide<T>(StateMachine<T> machine)
+        private TankMachine _machine;
+        public override void OnEnterState<T>(StateMachine<T> machine)
         {
             //1- check references & dependencies
-            var tankMachine = machine as TankMachine;
-            if(tankMachine == null) 
-                throw new Exception($"State machine is null : Decision [{typeof(TankPatrolDecision)}]");
+            _machine = machine as TankMachine;
+            if(_machine == null)   throw new Exception($"State machine is null : Decision [{typeof(TankPatrolDecision)}]");
+        }
 
-            return true;
-            //return !vehicleAi.shouldBeIdle;
+        public override bool Decide<T>(StateMachine<T> machine)
+        {
+            return !_machine.parent.IsIdle;
         }
     }
 

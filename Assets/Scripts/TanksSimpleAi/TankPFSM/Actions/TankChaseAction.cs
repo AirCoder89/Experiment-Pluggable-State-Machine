@@ -7,35 +7,29 @@ namespace TanksSimpleAi.TankPFSM.Actions
     [CreateAssetMenu(menuName = "PFSM/Actions/Chase")]
     public class TankChaseAction : SmAction
     {
+        public float attackDistance;
+        public bool attack;
+        private TankMachine _machine;
+        
         public override void OnEnter<T>(StateMachine<T> machine)
         {
             //1- check references & dependencies
-            if (typeof(T) != typeof(TankNpc) || machine.parent == null)
-                throw new Exception("machine parent must be not null !!");
-            var parent = machine.parent as TankNpc;
-            if(parent == null) 
-                throw new Exception($"State machine parent is null : parent type [{typeof(T)}]");
-            var vehicleAi = machine as TankMachine;
-            if(vehicleAi == null) 
-                throw new Exception($"State machine is null : Action [{typeof(TankChaseAction)}]");
+            _machine = machine as TankMachine;
+            if(_machine == null)   throw new Exception($"State machine is null : Action [{typeof(TankChaseAction)}]");
 
-            parent.agent.enabled = true;
+            //2- init action
+            _machine.parent.agent.enabled = true;
         }
 
         public override void OnUpdate<T>(StateMachine<T> machine)
         {
-            //1- check references & dependencies
-            if (typeof(T) != typeof(TankNpc) || machine.parent == null)
-                throw new Exception("machine parent must be not null !!");
-            var parent = machine.parent as TankNpc;
-            if(parent == null) 
-                throw new Exception($"State machine parent is null : parent type [{typeof(T)}]");
-            var tankMachine = machine as TankMachine;
-            if(tankMachine == null) 
-                throw new Exception($"State machine is null : Action [{typeof(TankChaseAction)}]");
-            
-           /* if(parent.targetActor != null)
-                parent.MoveTo(parent.targetActor.transform.position);*/
+            //2- do action
+           if(_machine.parent.targetActor == null) return;
+               _machine.parent.MoveTo(_machine.parent.targetActor.transform.position);
+               if (attack && ((_machine.parent.remainingDistance - attackDistance) <= _machine.parent.targetDistance))
+               {
+                  _machine.parent.Fire();
+               }
         }
 
         public override void OnExit<T>(StateMachine<T> machine)
